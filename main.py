@@ -1,11 +1,13 @@
 def gether_data():
     n1 = int(input("Primeiro Valor:"))
     n2 = int(input("Segundo Valor:"))
+    op = input("Operação: ")
     
+    return n1,n2,op
 
 def main():
-    n1, n2 = gether_data()
-    print(n1**n2)
+    n1, n2, op = gether_data()
+    print(eval(n1+op+n2))
     return None
 
 if __name__ == "__main__":
