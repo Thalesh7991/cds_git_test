@@ -1,7 +1,13 @@
+def get_operation():
+    op = input("Operação: ")
+
+    return op
+
 def gether_data():
     n1 = int(input("Primeiro Valor:"))
     n2 = int(input("Segundo Valor:"))
-    op = input("Operação: ")
+    
+    op = get_operation()
     
     return n1,n2,op
 
